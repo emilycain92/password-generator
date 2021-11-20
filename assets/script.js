@@ -33,7 +33,7 @@ var generatePassword=function(){
     var confirmNumber= window.confirm("How 'bout sum Numbers?");
     var confirmSpecial=window.confirm("Let's round it out with some special characters.");
   }
-//Generate the password time
+//Generate the password
   if(confirmUpperCase&&confirmLowerCase&&confirmNumber&&confirmSpecial) {
     output= [...upperCase,...lowerCase,...number,...special];
   }
@@ -53,7 +53,7 @@ var generatePassword=function(){
    return"";
  }
 
- //Generate password is "undefined". Create a shuffle.
+ //Generate password 
 var randomPassword="";
 for (let index = 0; index < passwordLength; index++) {
   var randomCharacterIndex= Math.floor(Math.random()*output.length)
